@@ -1,0 +1,18 @@
+{
+  "name": "muse",
+  "version": "1.0.0",
+  "description": "MUSE music player",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "music"
+  ],
+  "author": "ONLIX",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^19.0.4",
+    "electron-unhandled": "^4.0.1"
+  }
+}
