@@ -6,4 +6,4 @@ webview.create_window(
     width=450,
     height=650
 )
-webview.start(debug=True)
+webview.start(debug=True, user_agent='MUSE Client')
