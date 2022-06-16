@@ -16,8 +16,10 @@ def fix_directory() -> None: # make sure the user's in the correct directory
             print(f'This is done to solve some issues!')
             print(f'Use --stay to skip that.')
         
-def ask_os() -> str: # returns the file name of the os-specific installer script    
-    print(f'Your operating system is recognized as: {platform.freedesktop_os_release().get("ID_LIKE")}')
+def ask_os() -> str: # returns the file name of the os-specific installer script  
+    if os.name == 'posix': # Linux
+        print(f'Your Linux distro is recognized as: {platform.freedesktop_os_release().get("ID_LIKE")}')
+    
     print('Choose your operating system:')
     
     for number, script in enumerate(scripts): # list all the operating_systems with their given number
